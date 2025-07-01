@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "name": "SIP Vision",
+    "image": "/image/sip_web.png",
+    "logo": [
+      {
+        "image": "/logo/nodejs_logo.webp"
+      },
+      {
+        "image": "/logo/vite_logo.webp"
+      },
+      {
+        "image": "/logo/react_logo.webp"
+      },
+      {
+        "image": "/logo/tailwind_logo.webp"
+      },
+      {
+        "image": "/logo/typescript_logo.webp"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Management System Hotel",
+    "image": "/image/hotel_web.png",
+    "logo": [
+      {
+        "image": "/logo/laravel_logo.webp"
+      },
+      {
+        "image": "/logo/php_logo.webp"
+      },
+      {
+        "image": "/logo/bootstrap_logo.webp"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Dashboard Statistik",
+    "image": "/image/kkmi_web.png",
+    "logo": [
+      {
+        "image": "/logo/nodejs_logo.webp"
+      },
+      {
+        "image": "/logo/react_logo.webp"
+      },
+      {
+        "image": "/logo/express_logo.webp"
+      },
+      {
+        "image": "/logo/"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "PM Scheduler",
+    "image": "/image/pmscheduler_web.png",
+    "logo": [
+      {
+        "image": "/logo/codeigniter_logo.webp"
+      },
+      {
+        "image": "/logo/php_logo.webp"
+      },
+      {
+        "image": "/logo/bootstrap_logo.webp"
+      },
+      {
+        "image": "/logo/mssql.webp"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "E-Sparepart",
+    "image": "/image/esparepart_web.png",
+    "logo": [
+      {
+        "image": "/logo/codeigniter_logo.webp"
+      },
+      {
+        "image": "/logo/php_logo.webp"
+      },
+      {
+        "image": "/logo/bootstrap_logo.webp"
+      },
+      {
+        "image": "/logo/mysql.webp"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Cheksheet",
+    "image": "/image/checksheet_web.png",
+    "logo": [
+      {
+        "image": "/logo/codeigniter_logo.webp"
+      },
+      {
+        "image": "/logo/php_logo.webp"
+      },
+      {
+        "image": "/logo/bootstrap_logo.webp"
+      },
+      {
+        "image": "/logo/mysql.webp"
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "name": "HTML",
+    "image": "/logo/html_logo.webp"
+  },
+  {
+    "name": "CSS",
+    "image": "/logo/css_logo.webp"
+  },
+  {
+    "name": "Javascript",
+    "image": "/logo/css_logo.webp"
+  },
+  {
+    "name": "PHP",
+    "image": "/logo/php_logo.webp"
+  },
+  {
+    "name": "Typescript",
+    "image": "/logo/typescript_logo.webp"
+  },
+  {
+    "name": "Tailwind",
+    "image": "/logo/tailwind_logo.webp"
+  },
+  {
+    "name": "Bootstrap",
+    "image": "/logo/bootstrap_logo.webp"
+  },
+  {
+    "name": "React",
+    "image": "/logo/react_logo.webp"
+  },
+  {
+    "name": "Next JS",
+    "image": "/logo/html_logo.webp"
+  },
+  {
+    "name": "CodeIgniter",
+    "image": "/logo/codeigniter_logo.webp"
+  },
+  {
+    "name": "Laravel",
+    "image": "/logo/laravel_logo.webp"
+  },
+  {
+    "name": "Node JS",
+    "image": "/logo/nodejs_logo.webp"
+  },
+  {
+    "name": "Express JS",
+    "image": "/logo/express_logo.webp"
+  },
+  {
+    "name": "Webpack",
+    "image": "/logo/webpack.webp"
+  },
+  {
+    "name": "MySQL",
+    "image": "/logo/mysql.webp"
+  },
+  {
+    "name": "SQL Server",
+    "image": "/logo/mssql.webp"
+  },
+  {
+    "name": "MongoDB",
+    "image": "/logo/MongoDB_logo.webp"
+  }
+]
