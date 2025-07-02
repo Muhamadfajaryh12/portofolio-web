@@ -1,42 +1,44 @@
-import React from "react";
-import * as motion from "motion/react-client";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
 
-const getRandomOffset = () => {
-  const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-  return { x: rand(-100, 100), y: rand(-100, 100) }; // posisi awal acak
-};
+const getRandomFloat = (min, max) => Math.random() * (max - min) + min;
+const CardSkill = ({ data, isEven, constraints }) => {
+  const controls = useAnimation();
 
-const CardSkill = ({ data, isEven, ...props }) => {
-  const { name, image } = data;
-  const initialPos = getRandomOffset();
+  useEffect(() => {
+    const float = async () => {
+      while (true) {
+        await controls.start({
+          x: getRandomFloat(-200, 200),
+          y: getRandomFloat(-200, 200),
+          transition: {
+            duration: getRandomFloat(5, 10),
+            ease: "easeInOut",
+          },
+        });
+      }
+    };
+
+    float();
+  }, [controls]);
 
   return (
     <motion.div
+      animate={controls}
       drag
-      dragConstraints={props.constraints}
-      dragElastic={0.2}
-      initial={initialPos}
-      animate={{ x: 0, y: 0 }}
-      transition={{ type: "spring", stiffness: 80, damping: 15 }}
+      dragConstraints={constraints}
+      className={`p-4 rounded-xl text-white shadow-md border ${
+        isEven
+          ? "border-pink-500  shadow-pink-500"
+          : "border-blue-500 shadow-blue-500"
+      }`}
+      style={{
+        backgroundColor: "rgba(255, 255, 255, 0.05)",
+        backdropFilter: "blur(10px)",
+      }}
     >
-      <div
-        className={`rounded-xl ring-2 p-1 ${
-          isEven
-            ? "ring-[#ff00cc] shadow-lg shadow-[#ff00cc]"
-            : "ring-[#3333ff] shadow-lg shadow-[#3333ff]"
-        }`}
-      >
-        <div
-          className={`rounded-xl w-full ring p-4 text-gray-200 flex gap-2 justify-center items-center ${
-            isEven
-              ? "ring-[#ff00cc]  inset-shadow-sm inset-shadow-[#ff00cc]"
-              : "ring-[#3333ff]  inset-shadow-sm inset-shadow-[#3333ff] "
-          }`}
-        >
-          <p className="font-semibold text-md">{name}</p>
-          <img src={image} alt={name} className="w-8 h-8" />
-        </div>
-      </div>
+      <img src={data.image} alt={data.name} className="mx-auto w-12 h-12" />
+      <p className="mt-2 text-center font-extralight">{data.name}</p>
     </motion.div>
   );
 };

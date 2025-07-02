@@ -5,6 +5,7 @@ import {
   animate,
   motion,
   MotionValue,
+  useInView,
   useMotionValue,
   useMotionValueEvent,
   useScroll,
@@ -17,11 +18,11 @@ const rightInset = `80%`;
 const transparent = `#0000`;
 const opaque = `#000`;
 function useScrollOverflowMask(scrollXProgress) {
-  console.log(scrollXProgress);
+  const projecRef = useRef();
   const maskImage = useMotionValue(
     `linear-gradient(90deg, ${opaque}, ${opaque} ${left}, ${opaque} ${rightInset}, ${transparent})`
   );
-
+  const isInView = useInView(projecRef, { amount: 0.5, once: false });
   useMotionValueEvent(scrollXProgress, "change", (value) => {
     console.log(value);
     if (value === 0) {
@@ -58,9 +59,15 @@ const Project = () => {
       id="project"
     >
       <div className="max-w-7xl">
-        <p className=" text-4xl font-semibold my-10 text-white uppercase">
+        <motion.p
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ amount: 0.5 }}
+          transition={{ duration: 0.8 }}
+          className=" text-4xl font-semibold my-10 text-white uppercase"
+        >
           PROJECT
-        </p>{" "}
+        </motion.p>
         <motion.ul
           ref={ref}
           style={{ maskImage }}
@@ -72,6 +79,10 @@ const Project = () => {
             });
           }}
           className="scroll-smooth flex gap-5 p-4 items-center overflow-x-auto snap-mandatory snap-x custom-scroll overscroll-contain"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ amount: 0.5 }}
+          transition={{ duration: 0.8 }}
         >
           {dataProject.map((item, index) => (
             <li>

@@ -12,10 +12,22 @@ const Skill = () => {
       id="skills"
     >
       <motion.div className="max-w-7xl mx-auto" ref={constraintsRef}>
-        <p className="  text-4xl font-semibold my-10 text-white uppercase">
+        <motion.p
+          className="  text-4xl font-semibold my-10 text-white uppercase"
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ amount: 0.5 }}
+          transition={{ duration: 0.8 }}
+        >
           SKILLS
-        </p>
-        <div className="grid grid-cols-7 gap-6">
+        </motion.p>
+        <motion.div
+          className="grid sm:grid-cols-3 md:grid-cols-7 gap-6"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ amount: 0.5 }}
+          transition={{ duration: 0.8 }}
+        >
           {skillData.map((item, index) => (
             <CardSkill
               data={item}
@@ -24,7 +36,7 @@ const Skill = () => {
               constraints={constraintsRef}
             />
           ))}
-        </div>
+        </motion.div>
       </motion.div>
     </div>
   );

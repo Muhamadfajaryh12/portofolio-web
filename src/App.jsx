@@ -1,15 +1,17 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import "./App.css";
-import Navbar from "./components/Navbar";
 import MainLayout from "./layouts/MainLayout";
 import Banner from "./section/Banner";
 import Experience from "./section/Experience";
 import Project from "./section/Project";
 import Skill from "./section/Skill";
+import About from "./section/About";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   useEffect(() => {
-    const sectionIds = ["about", "experience", "skills", "project"];
+    const sectionIds = ["about", "experience", "skills", "project", "banner"];
     const elements = sectionIds.map((id) => document.getElementById(id));
 
     const observer = new IntersectionObserver(
@@ -17,7 +19,16 @@ function App() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const id = entry.target.id;
-            window.history.replaceState(null, "", `#${id}`);
+            console.log(id);
+            if (id == "banner") {
+              window.history.replaceState(
+                null,
+                "",
+                window.location.pathname + window.location.search
+              );
+            } else {
+              window.history.replaceState(null, "", `#${id}`);
+            }
           }
         });
       },
@@ -36,9 +47,11 @@ function App() {
       });
     };
   }, []);
+
   return (
     <MainLayout>
       <Banner />
+      <About />
       <Experience />
       <Skill />
       <Project />

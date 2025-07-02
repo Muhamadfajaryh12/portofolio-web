@@ -1,5 +1,3 @@
-import React, { act } from "react";
-
 const CardExperience = ({ data, active }) => {
   const { company, periode, position, type } = data;
   return (
