@@ -53,12 +53,14 @@ const Project = () => {
   const { scrollXProgress } = useScroll({ container: ref });
   const maskImage = useScrollOverflowMask(scrollXProgress);
   return (
-    <div className="min-h-screen snap-center flex justify-center items-center flex-col">
+    <div
+      className="min-h-screen snap-center flex justify-center items-center"
+      id="project"
+    >
       <div className="max-w-7xl">
-        <p className=" text-center font-bold text-7xl my-4 text-[#ff00cc] text-shadow-lg text-shadow-[#00f0ff]">
+        <p className=" text-4xl font-semibold my-10 text-white uppercase">
           PROJECT
-        </p>
-
+        </p>{" "}
         <motion.ul
           ref={ref}
           style={{ maskImage }}
