@@ -45,6 +45,8 @@ const Banner = () => {
             viewport={{ amount: 0.5 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             className="border-2 border-pink-500 p-2 rounded-md text-center text-pink-500 font-bold w-32 shadow-lg shadow-pink-500 hover:bg-pink-700 hover:text-white"
+            href="/CV_Muhamad_Fajar_Yudhistira_Herjanto.pdf"
+            download
           >
             CV
           </motion.a>

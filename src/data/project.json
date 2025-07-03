@@ -35,64 +35,26 @@
     "description": "HRIS (Human Resources Information System) merupakan proyek dummy yang dibangun untuk mensimulasikan sistem manajemen SDM dalam sebuah perusahaan. "
   },
   {
-    "name": "SIP Vision",
-    "image": "/image/sip_web.png",
+    "name": "KerjaKu",
+    "image": "/image/kerjaku_web.png",
     "logo": [
       {
-        "image": "/logo/nodejs_logo.webp"
+        "image": "/logo/next_logo.webp"
       },
       {
-        "image": "/logo/vite_logo.webp"
-      },
-      {
-        "image": "/logo/react_logo.webp"
+        "image": "/logo/typescript_logo.webp"
       },
       {
         "image": "/logo/tailwind_logo.webp"
       },
       {
-        "image": "/logo/typescript_logo.webp"
+        "image": "/logo/go_logo.png"
+      },
+      {
+        "image": "/logo/mssql.webp"
       }
     ],
-    "description": "Merupakan Project Real yang dibangun untuk company profile dan menampilkan katalog kacamata untuk sebuah toko kacamata "
-  },
-  {
-    "name": "Management System Hotel",
-    "image": "/image/hotel_web.png",
-    "logo": [
-      {
-        "image": "/logo/laravel_logo.webp"
-      },
-      {
-        "image": "/logo/php_logo.webp"
-      },
-      {
-        "image": "/logo/bootstrap_logo.webp"
-      },
-      {
-        "image": "/logo/postgresql_logo.webp"
-      }
-    ],
-    "description": "Merupakan proyek real yang dikembangkan untuk membantu pengelolaan operasional hotel, termasuk manajemen data tamu, reservasi, dan informasi kamar secara digital dan efisien."
-  },
-  {
-    "name": "Dashboard Statistik",
-    "image": "/image/kkmi_web.png",
-    "logo": [
-      {
-        "image": "/logo/nodejs_logo.webp"
-      },
-      {
-        "image": "/logo/react_logo.webp"
-      },
-      {
-        "image": "/logo/express_logo.webp"
-      },
-      {
-        "image": "/logo/postgresql_logo.webp"
-      }
-    ],
-    "description": "Merupakan Real Project yang dibangun untuk memvisualisasikan berbagai macam data statistik dan monitoring untuk sebuah perusahaan manufaktur."
+    "description": "Merupakan Dummy Project dibangun untuk mensimulasikan sistem pengelolaan data pekerjaan dalam sebuah perusahaan atau organisasi."
   },
   {
     "name": "PM Scheduler",
@@ -188,6 +150,66 @@
       }
     ],
     "description": "Merupakan Real Project yang dibangun untuk mendigitalisasi dan memonitor proses permintaan dan pelaporan perawatan mesin di lingkungan produksi"
+  },
+  {
+    "name": "SIP Vision",
+    "image": "/image/sip_web.png",
+    "logo": [
+      {
+        "image": "/logo/nodejs_logo.webp"
+      },
+      {
+        "image": "/logo/vite_logo.webp"
+      },
+      {
+        "image": "/logo/react_logo.webp"
+      },
+      {
+        "image": "/logo/tailwind_logo.webp"
+      },
+      {
+        "image": "/logo/typescript_logo.webp"
+      }
+    ],
+    "description": "Merupakan Project Real yang dibangun untuk company profile dan menampilkan katalog kacamata untuk sebuah toko kacamata "
+  },
+  {
+    "name": "Management System Hotel",
+    "image": "/image/hotel_web.png",
+    "logo": [
+      {
+        "image": "/logo/laravel_logo.webp"
+      },
+      {
+        "image": "/logo/php_logo.webp"
+      },
+      {
+        "image": "/logo/bootstrap_logo.webp"
+      },
+      {
+        "image": "/logo/postgresql_logo.webp"
+      }
+    ],
+    "description": "Merupakan proyek real yang dikembangkan untuk membantu pengelolaan operasional hotel, termasuk manajemen data tamu, reservasi, dan informasi kamar secara digital dan efisien."
+  },
+  {
+    "name": "Dashboard Statistik",
+    "image": "/image/kkmi_web.png",
+    "logo": [
+      {
+        "image": "/logo/nodejs_logo.webp"
+      },
+      {
+        "image": "/logo/react_logo.webp"
+      },
+      {
+        "image": "/logo/express_logo.webp"
+      },
+      {
+        "image": "/logo/postgresql_logo.webp"
+      }
+    ],
+    "description": "Merupakan Real Project yang dibangun untuk memvisualisasikan berbagai macam data statistik dan monitoring untuk sebuah perusahaan manufaktur."
   },
   {
     "name": "Capstone Project - Webeer",
