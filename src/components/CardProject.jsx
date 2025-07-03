@@ -23,7 +23,11 @@ const CardProject = ({ data }) => {
               </div>
             ))}
           </div>
-          <a className="flex items-center gap-1">
+          <a
+            className="flex items-center gap-1"
+            href="https://github.com/Muhamadfajaryh12?tab=repositories"
+            target="_blank"
+          >
             <span className="text-sm">View project</span>
             <MdArrowOutward size={20} />
           </a>
