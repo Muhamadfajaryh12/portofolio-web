@@ -1,6 +1,40 @@
 [
   {
-    "id": 1,
+    "name": "Chat Bot AI",
+    "image": "/image/chatbot_web.png",
+    "logo": [
+      {
+        "image": "/logo/react_logo.webp"
+      },
+      {
+        "image": "/logo/javascript_logo.webp"
+      },
+      {
+        "image": "/logo/tailwind_logo.webp"
+      }
+    ],
+    "description": "Merupakan proyek dummy berbasis website yang mengintegrasikan Gemini API untuk membangun chatbot berbasis AI yang mampu merespons dan berinteraksi secara dinamis dengan pengguna."
+  },
+  {
+    "name": "HRIS",
+    "image": "/image/hris_web.png",
+    "logo": [
+      {
+        "image": "/logo/next_logo.webp"
+      },
+      {
+        "image": "/logo/javascript_logo.webp"
+      },
+      {
+        "image": "/logo/tailwind_logo.webp"
+      },
+      {
+        "image": "/logo/postgresql_logo.webp"
+      }
+    ],
+    "description": "HRIS (Human Resources Information System) merupakan proyek dummy yang dibangun untuk mensimulasikan sistem manajemen SDM dalam sebuah perusahaan. "
+  },
+  {
     "name": "SIP Vision",
     "image": "/image/sip_web.png",
     "logo": [
@@ -19,10 +53,10 @@
       {
         "image": "/logo/typescript_logo.webp"
       }
-    ]
+    ],
+    "description": "Merupakan Project Real yang dibangun untuk company profile dan menampilkan katalog kacamata untuk sebuah toko kacamata "
   },
   {
-    "id": 2,
     "name": "Management System Hotel",
     "image": "/image/hotel_web.png",
     "logo": [
@@ -34,11 +68,14 @@
       },
       {
         "image": "/logo/bootstrap_logo.webp"
+      },
+      {
+        "image": "/logo/postgresql_logo.webp"
       }
-    ]
+    ],
+    "description": "Merupakan proyek real yang dikembangkan untuk membantu pengelolaan operasional hotel, termasuk manajemen data tamu, reservasi, dan informasi kamar secara digital dan efisien."
   },
   {
-    "id": 3,
     "name": "Dashboard Statistik",
     "image": "/image/kkmi_web.png",
     "logo": [
@@ -52,12 +89,12 @@
         "image": "/logo/express_logo.webp"
       },
       {
-        "image": "/logo/"
+        "image": "/logo/postgresql_logo.webp"
       }
-    ]
+    ],
+    "description": "Merupakan Real Project yang dibangun untuk memvisualisasikan berbagai macam data statistik dan monitoring untuk sebuah perusahaan manufaktur."
   },
   {
-    "id": 4,
     "name": "PM Scheduler",
     "image": "/image/pmscheduler_web.png",
     "logo": [
@@ -73,10 +110,10 @@
       {
         "image": "/logo/mssql.webp"
       }
-    ]
+    ],
+    "description": "Merupakan Real Project yang dibangun untuk memanajemen, memonitoring dan menjadwalan aktivitas Dept Maintenance di PT Century Batteries Indonesia,  "
   },
   {
-    "id": 5,
     "name": "E-Sparepart",
     "image": "/image/esparepart_web.png",
     "logo": [
@@ -92,10 +129,10 @@
       {
         "image": "/logo/mysql.webp"
       }
-    ]
+    ],
+    "description": "Merupakan Real Project dengan mendigitalisasi formulir Revisi dan Pembuatan Part Number yang melibatkan berbagai Departemen."
   },
   {
-    "id": 4,
     "name": "Cheksheet",
     "image": "/image/checksheet_web.png",
     "logo": [
@@ -111,6 +148,147 @@
       {
         "image": "/logo/mysql.webp"
       }
-    ]
+    ],
+    "description": "Merupakan Real Project dengan mengembangkan fitur filter checksheet dan memperbaiki user experience untuk melakukan approval"
+  },
+  {
+    "name": "Maintenance Learning Center",
+    "image": "/image/learning_web.png",
+    "logo": [
+      {
+        "image": "/logo/codeigniter_logo.webp"
+      },
+      {
+        "image": "/logo/php_logo.webp"
+      },
+      {
+        "image": "/logo/bootstrap_logo.webp"
+      },
+      {
+        "image": "/logo/mssql.webp"
+      }
+    ],
+    "description": "Merupakan Real Project dengan membangun Maintenance Learning Center untuk departemen Maintenance guna memanajemen sistem training"
+  },
+  {
+    "name": "Production Maintenance Ticket",
+    "image": "/image/production_web.png",
+    "logo": [
+      {
+        "image": "/logo/codeigniter_logo.webp"
+      },
+      {
+        "image": "/logo/php_logo.webp"
+      },
+      {
+        "image": "/logo/bootstrap_logo.webp"
+      },
+      {
+        "image": "/logo/mssql.webp"
+      }
+    ],
+    "description": "Merupakan Real Project yang dibangun untuk mendigitalisasi dan memonitor proses permintaan dan pelaporan perawatan mesin di lingkungan produksi"
+  },
+  {
+    "name": "Capstone Project - Webeer",
+    "image": "/image/webeer_web.png",
+    "logo": [
+      {
+        "image": "/logo/javascript_logo.webp"
+      },
+      {
+        "image": "/logo/bootstrap_logo.webp"
+      },
+      {
+        "image": "/logo/webpack.webp"
+      },
+      {
+        "image": "/logo/nodejs_logo.webp"
+      },
+      {
+        "image": "/logo/express_logo.webp"
+      },
+      {
+        "image": "/logo/pwa_icon.webp"
+      },
+      {
+        "image": "/logo/MongoDB_logo.webp"
+      }
+    ],
+    "description": "Merupakan Proyek Capstone yang bertujuan untuk membangun Progressive Web App bertema ekonomi, sebagai forum diskusi dan pencarian kerja."
+  },
+  {
+    "name": "Final Exam - News",
+    "image": "/image/news_web.png",
+    "logo": [
+      {
+        "image": "/logo/php_logo.webp"
+      },
+      {
+        "image": "/logo/bootstrap_logo.webp"
+      },
+      {
+        "image": "/logo/javascript_logo.webp"
+      },
+
+      {
+        "image": "/logo/mysql.webp"
+      }
+    ],
+    "description": "Merupakan Project Ujian Akhir Semester yang menampilkan berita terkini dengan fitur CRUD, dibangun menggunakan PHP dan MySQL"
+  },
+  {
+    "name": "Competition - WebUP",
+    "image": "/image/webup_web.png",
+    "logo": [
+      {
+        "image": "/logo/react_logo.webp"
+      },
+      {
+        "image": "/logo/tailwind_logo.webp"
+      },
+      {
+        "image": "/logo/javascript_logo.webp"
+      }
+    ],
+    "description": "Merupakan proyek kompetisi yang dibangun dengan React dan TailwindCSS untuk menampilkan konten kreatif secara dinamis."
+  },
+  {
+    "name": "Herba Web",
+    "image": "/image/herba_web.png",
+    "logo": [
+      {
+        "image": "/logo/next_logo.webp"
+      },
+      {
+        "image": "/logo/tailwind_logo.webp"
+      },
+      {
+        "image": "/logo/typescript_logo.webp"
+      },
+      {
+        "image": "/logo/express_logo.webp"
+      },
+      {
+        "image": "/logo/mssql.webp"
+      }
+    ],
+    "description": "Merupakan Dummy Project untuk penjualan dan manajemen katalog produk herbal, terintegrasi dengan Payment Gateway Midtrans."
+  },
+  {
+    "name": "Al-Qur'an Web",
+    "image": "/image/alquran_web.png",
+    "logo": [
+      {
+        "image": "/logo/react_logo.webp"
+      },
+      {
+        "image": "/logo/tailwind_logo.webp"
+      },
+      {
+        "image": "/logo/typescript_logo.webp"
+      }
+    ],
+    "description": "Merupakan Project Dummy yang menampilkan Al-Qur'an digital dengan fitur pencarian surah dan ayat, dibangun menggunakan React dan TypeScript."
   }
 ]

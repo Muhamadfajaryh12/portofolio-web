@@ -37,7 +37,7 @@ const CardSkill = ({ data, isEven, constraints }) => {
         backdropFilter: "blur(10px)",
       }}
     >
-      <img src={data.image} alt={data.name} className="mx-auto w-12 h-12" />
+      <img src={data.image} alt={data.name} className="mx-auto w-14 h-12" />
       <p className="mt-2 text-center font-extralight">{data.name}</p>
     </motion.div>
   );

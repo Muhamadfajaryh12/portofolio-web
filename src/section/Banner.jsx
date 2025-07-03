@@ -27,23 +27,39 @@ const Banner = () => {
         <h1 className=" text-white font-extrabold text-7xl uppercase">
           {text}
         </h1>
-        <motion.div
-          className="flex justify-center mt-10 gap-4"
-          initial={{ opacity: 0, y: 100 }}
-          animate={animate ? { opacity: 1, y: 0 } : ""}
-          viewport={{ amount: 0.5 }}
-          transition={{ duration: 0.8 }}
-        >
-          <button className="border-2 border-cyan-500 p-2 rounded-md text-cyan-500 font-bold w-32 shadow-lg shadow-cyan-500 hover:bg-cyan-700 hover:text-white">
+        <div className="flex justify-center mt-10 gap-4">
+          <motion.a
+            initial={{ opacity: 0, y: 100 }}
+            animate={animate ? { opacity: 1, y: 0 } : ""}
+            viewport={{ amount: 0.5 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="border-2 border-cyan-500 p-2 rounded-md text-center text-cyan-500 font-bold w-32 shadow-lg shadow-cyan-500 hover:bg-cyan-700 hover:text-white"
+            href="https://github.com/Muhamadfajaryh12?tab=repositories"
+            target="_blank"
+          >
             Github
-          </button>
-          <button className="border-2 border-pink-500 p-2 rounded-md text-pink-500 font-bold w-32 shadow-lg shadow-pink-500 hover:bg-pink-700 hover:text-white">
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0, y: 100 }}
+            animate={animate ? { opacity: 1, y: 0 } : ""}
+            viewport={{ amount: 0.5 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="border-2 border-pink-500 p-2 rounded-md text-center text-pink-500 font-bold w-32 shadow-lg shadow-pink-500 hover:bg-pink-700 hover:text-white"
+          >
             CV
-          </button>
-          <button className="border-2 border-blue-500 p-2 rounded-md text-blue-500 font-bold w-32 shadow-lg shadow-blue-500 hover:bg-blue-700 hover:text-white">
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0, y: 100 }}
+            animate={animate ? { opacity: 1, y: 0 } : ""}
+            viewport={{ amount: 0.5 }}
+            transition={{ duration: 0.8, delay: 0.9 }}
+            className="border-2 border-blue-500 p-2 rounded-md text-center text-blue-500 font-bold w-32 shadow-lg shadow-blue-500 hover:bg-blue-700 hover:text-white"
+            href="https://www.linkedin.com/in/muhamadfajaryh/"
+            target="_blank"
+          >
             Linkedln
-          </button>
-        </motion.div>
+          </motion.a>
+        </div>
       </div>
     </div>
   );

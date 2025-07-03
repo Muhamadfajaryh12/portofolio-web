@@ -18,11 +18,9 @@ const rightInset = `80%`;
 const transparent = `#0000`;
 const opaque = `#000`;
 function useScrollOverflowMask(scrollXProgress) {
-  const projecRef = useRef();
   const maskImage = useMotionValue(
     `linear-gradient(90deg, ${opaque}, ${opaque} ${left}, ${opaque} ${rightInset}, ${transparent})`
   );
-  const isInView = useInView(projecRef, { amount: 0.5, once: false });
   useMotionValueEvent(scrollXProgress, "change", (value) => {
     console.log(value);
     if (value === 0) {

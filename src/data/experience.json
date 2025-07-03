@@ -2,25 +2,31 @@
   {
     "company": "PT Century Batteries Indonesia",
     "position": "Web Programmer",
-    "periode": "1 February 2024 - 31 July 2024",
-    "type": "Internship"
-  },
-  {
-    "company": "CV Karib IT Solution",
-    "position": "Web Programmer",
-    "periode": "1 February 2024 - 31 July 2024",
+    "periode": " February 2024 -  July 2024",
     "type": "Internship"
   },
   {
     "company": "Magang Studi Independent Bersertifkat",
     "position": "Mobile Development",
-    "periode": "1 February 2024 - 31 July 2024",
+    "periode": "Agustus 2023 - Januari 2024",
     "type": "Studi Independent"
+  },
+  {
+    "company": "CV Karib IT Solution",
+    "position": "Web Programmer",
+    "periode": "Agustus 2023 - Oktober 2023",
+    "type": "Internship"
+  },
+  {
+    "company": "Semantic 7.0 Competition HIMTIKA",
+    "position": "Software Development",
+    "periode": "April 2023",
+    "type": "Competition"
   },
   {
     "company": "Magang Studi Independent Bersertifkat",
     "position": "Front-end & Back-end",
-    "periode": "1 February 2024 - 31 July 2024",
+    "periode": "Agustus 2022 - Januari 2023",
     "type": "Studi Independent"
   }
 ]

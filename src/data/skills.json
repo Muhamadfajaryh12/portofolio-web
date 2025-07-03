@@ -9,7 +9,7 @@
   },
   {
     "name": "Javascript",
-    "image": "/logo/css_logo.webp"
+    "image": "/logo/javascript_logo.webp"
   },
   {
     "name": "PHP",
@@ -33,7 +33,7 @@
   },
   {
     "name": "Next JS",
-    "image": "/logo/html_logo.webp"
+    "image": "/logo/next.png"
   },
   {
     "name": "CodeIgniter",
@@ -52,6 +52,10 @@
     "image": "/logo/express_logo.webp"
   },
   {
+    "name": "GO",
+    "image": "/logo/go_logo.png"
+  },
+  {
     "name": "Webpack",
     "image": "/logo/webpack.webp"
   },
@@ -66,5 +70,9 @@
   {
     "name": "MongoDB",
     "image": "/logo/MongoDB_logo.webp"
+  },
+  {
+    "name": "Postgre SQL",
+    "image": "/logo/postgresql_logo.webp"
   }
 ]
