@@ -11,10 +11,7 @@ const Experience = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div
-      className="min-h-screen snap-center flex items-center justify-center p-4"
-      id="experience"
-    >
+    <div className="min-h-screen  flex items-center justify-center p-4">
       <div className="max-w-7xl mx-auto ">
         <motion.p
           className="text-4xl font-semibold my-6 text-white uppercase"

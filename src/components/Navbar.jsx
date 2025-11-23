@@ -1,49 +1,34 @@
 import React, { useEffect, useState } from "react";
 
-const Navbar = () => {
-  const [active, setActive] = useState(window.location.hash);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (window.location.hash !== active) {
-        setActive(window.location.hash);
-      }
-    }, 100);
-    console.log(active);
-    return () => clearInterval(interval);
-  }, [active]);
+const Navbar = ({ setState, state }) => {
   return (
-    <div className="w-full  p-6 border-b  border-gray-900 fixed ">
-      <div className="flex items-center">
-        <h1 className="text-white font-bold ">Muhamad Fajar</h1>
-        <div className=" flex-1">
+    <div className="w-full  border-gray-900 p-4 0 ">
+      <div className="flex justify-between items-center">
+        <button className=" font-bold " onClick={() => setState("/")}>
+          Muhamad Fajar
+        </button>
+        <div className="">
           <ul className="flex justify-center gap-4">
-            <li
-              className={` font-bold ${
-                active == "#about" ? "text-pink-500" : "text-white"
-              }`}
-            >
-              <a href="#about">ABOUT</a>
+            <li>
+              <button
+                onClick={() => setState("about")}
+                className={`${
+                  state == "about" ? "text-stone-700" : "text-gray-300"
+                }`}
+              >
+                About
+              </button>
             </li>
-            <li
-              className={` font-bold ${
-                active == "#experience" ? "text-pink-500" : "text-white"
-              }`}
-            >
-              <a href="#experience">EXPERIENCE</a>
-            </li>
-            <li
-              className={` font-bold ${
-                active == "#skills" ? "text-pink-500" : "text-white"
-              }`}
-            >
-              <a href="#skills">SKILLS</a>
-            </li>
-            <li
-              className={` font-bold ${
-                active == "#project" ? "text-pink-500" : "text-white"
-              }`}
-            >
-              <a href="#project">PROJECT</a>
+
+            <li>
+              <button
+                onClick={() => setState("project")}
+                className={`${
+                  state == "project" ? "text-stone-700" : "text-gray-300"
+                }`}
+              >
+                Project
+              </button>
             </li>
           </ul>
         </div>

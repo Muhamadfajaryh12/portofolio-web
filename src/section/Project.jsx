@@ -1,95 +1,26 @@
 import React, { useRef } from "react";
 import dataProject from "../data/project.json";
 import CardProject from "../components/CardProject";
-import {
-  animate,
-  motion,
-  MotionValue,
-  useInView,
-  useMotionValue,
-  useMotionValueEvent,
-  useScroll,
-} from "motion/react";
-
-const left = `0%`;
-const right = `100%`;
-const leftInset = `20%`;
-const rightInset = `80%`;
-const transparent = `#0000`;
-const opaque = `#000`;
-function useScrollOverflowMask(scrollXProgress) {
-  const maskImage = useMotionValue(
-    `linear-gradient(90deg, ${opaque}, ${opaque} ${left}, ${opaque} ${rightInset}, ${transparent})`
-  );
-  useMotionValueEvent(scrollXProgress, "change", (value) => {
-    console.log(value);
-    if (value === 0) {
-      animate(
-        maskImage,
-        `linear-gradient(90deg, ${opaque}, ${opaque} ${left}, ${opaque} ${rightInset}, ${transparent})`
-      );
-    } else if (value === 1) {
-      animate(
-        maskImage,
-        `linear-gradient(90deg, ${transparent}, ${opaque} ${leftInset}, ${opaque} ${right}, ${opaque})`
-      );
-    } else if (
-      scrollXProgress.getPrevious() === 0 ||
-      scrollXProgress.getPrevious() === 1
-    ) {
-      animate(
-        maskImage,
-        `linear-gradient(90deg, ${transparent}, ${opaque} ${leftInset}, ${opaque} ${rightInset}, ${transparent})`
-      );
-    }
-  });
-
-  return maskImage;
-}
+import { MdWork, MdWorkOutline } from "react-icons/md";
 
 const Project = () => {
-  const ref = useRef(null);
-  const { scrollXProgress } = useScroll({ container: ref });
-  const maskImage = useScrollOverflowMask(scrollXProgress);
   return (
-    <div
-      className="min-h-screen snap-center flex justify-center items-center"
-      id="project"
-    >
-      <div className="max-w-7xl">
-        <motion.p
-          initial={{ opacity: 0, y: -50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ amount: 0.5 }}
-          transition={{ duration: 0.8 }}
-          className=" text-4xl font-semibold my-10 text-white uppercase"
-        >
-          PROJECT
-        </motion.p>
-        <motion.ul
-          ref={ref}
-          style={{ maskImage }}
-          onWheel={(e) => {
-            e.preventDefault();
-            ref.current.scrollBy({
-              left: e.deltaY,
-              behavior: "smooth",
-            });
-          }}
-          className="scroll-smooth flex gap-5 p-4 items-center overflow-x-auto snap-mandatory snap-x custom-scroll overscroll-contain"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ amount: 0.5 }}
-          transition={{ duration: 0.8 }}
-        >
-          {dataProject.map((item, index) => (
-            <li>
-              <CardProject key={index} data={item} />
-            </li>
-          ))}
-        </motion.ul>
+    <>
+      <h1 className="font-semibold">Projek</h1>
+      <div className="grid grid-cols-4 gap-3">
+        {dataProject.map((item) => (
+          <div className="border p-2 rounded-sm border-gray-300 flex gap-2 items-center">
+            <div className="p-2 bg-stone-800 text-gray-200 rounded-sm">
+              <MdWorkOutline size={25} />
+            </div>
+            <div className="">
+              <h6 className="font-semibold">{item.name}</h6>
+              <p className="text-sm">Github</p>
+            </div>
+          </div>
+        ))}
       </div>
-    </div>
+    </>
   );
 };
 

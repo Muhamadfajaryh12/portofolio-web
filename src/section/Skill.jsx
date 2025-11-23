@@ -7,10 +7,7 @@ const Skill = () => {
   const constraintsRef = useRef(null);
 
   return (
-    <div
-      className="min-h-screen snap-center flex items-center justify-center"
-      id="skills"
-    >
+    <div className="min-h-screen  flex items-center justify-center">
       <motion.div className="max-w-7xl mx-auto" ref={constraintsRef}>
         <motion.p
           className="  text-4xl font-semibold my-10 text-white uppercase"
