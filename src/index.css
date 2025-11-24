@@ -1,1 +1,4 @@
 @import "tailwindcss";
+.github-calendar * {
+  max-width: 100% !important;
+}

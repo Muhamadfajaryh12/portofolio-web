@@ -5,9 +5,9 @@ import { MdWork, MdWorkOutline } from "react-icons/md";
 
 const Project = () => {
   return (
-    <>
-      <h1 className="font-semibold">Projek</h1>
-      <div className="grid grid-cols-4 gap-3">
+    <div className="p-4">
+      <h1 className="font-bold my-2">Projek</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 ">
         {dataProject.map((item) => (
           <div className="border p-2 rounded-sm border-gray-300 flex gap-2 items-center">
             <div className="p-2 bg-stone-800 text-gray-200 rounded-sm">
@@ -15,12 +15,18 @@ const Project = () => {
             </div>
             <div className="">
               <h6 className="font-semibold">{item.name}</h6>
-              <p className="text-sm">Github</p>
+              <a
+                className="text-sm"
+                href="https://github.com/Muhamadfajaryh12?tab=repositories"
+                target="_blank"
+              >
+                Github
+              </a>
             </div>
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

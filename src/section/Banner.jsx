@@ -1,20 +1,43 @@
 import React, { useEffect, useState } from "react";
 import fajarPng from "../../public/image/fajar.png";
 import PrimaryButton from "../components/PrimaryButton";
+import { CiLinkedin } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+
 const Banner = () => {
   return (
     <div
-      className="w-full flex justify-between items-center h-[500px]"
+      className="w-full flex gap-6 justify-evenly items-center h-[500px] flex-wrap p-4"
       id="banner"
     >
+      <div className=" flex sm:flex-col gap-4 ">
+        <a href="https://www.linkedin.com/in/muhamadfajaryh">
+          <CiLinkedin size={30} className="text-stone-600" />
+        </a>
+        <a href="https://github.com/Muhamadfajaryh12?tab=repositories">
+          <FaGithub size={30} className="text-stone-600" />
+        </a>
+      </div>
       <div className="">
-        <h1 className="text-3xl font-bold">Halo, Saya Muhamad Fajar</h1>
-        <div className="flex gap-4 items-center-safe">
+        <h1 className="text-5xl font-bold ">Halo, Saya Muhamad Fajar</h1>
+        <div className="flex gap-4 items-center-safe my-6">
           <div className="w-32 h-1 bg-black "></div>
-          <h6 className="text-2xl italic font-semibold">Web Developer</h6>
+          <h6 className="text-xl italic font-semibold">Web Developer</h6>
         </div>
-        <div className="flex">
-          <PrimaryButton text={"Download CV"} />
+        <div className="max-w-xl">
+          <p className="text-stone-600">
+            Saya adalah seorang Web Developer asal Karawang yang bekerja secara
+            profesional dan berkomitmen untuk memberikan hasil terbaik.
+          </p>
+        </div>
+        <div className="flex mt-6">
+          <a
+            href="/public/CV_Muhamad_Fajar.pdf"
+            className="bg-stone-800 hover:bg-stone-900 text-white font-semibold text-sm p-3 rounded-md"
+            download
+          >
+            Download CV
+          </a>
         </div>
       </div>
       <div className="w-96 h-96">

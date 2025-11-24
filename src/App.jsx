@@ -83,7 +83,7 @@ function App() {
             initial={{ opacity: 0, x: direction === 1 ? 100 : -100 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: direction === 1 ? -100 : 100 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.8 }}
             className="absolute inset-0"
           >
             {pages[currentIndex].element}
